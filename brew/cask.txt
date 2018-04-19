@@ -1,4 +1,3 @@
-android-sdk
 hyper
 java8
 ngrok

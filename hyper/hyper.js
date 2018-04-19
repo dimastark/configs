@@ -40,11 +40,11 @@ module.exports = {
       lightWhite: '#ffffff'
     },
 
-    hyperBorder: {
-      borderColors: ['#2ca164', '#c6ff00'],
-      blurredColors: ['#e4e4e4'],
-      borderWidth: '1px',
-    },
+    // hyperBorder: {
+    //   borderColors: ['#2ca164', '#c6ff00'],
+    //   blurredColors: ['#e6e6e6'],
+    //   borderWidth: '1px',
+    // },
 
     shell: '/usr/local/bin/fish',
     shellArgs: ['--login'],
@@ -54,7 +54,7 @@ module.exports = {
   },
 
   // Plugins from npm
-  plugins: ['hyper-ligatures', 'hyperborder'],
+  plugins: ['hyper-ligatures'],
   localPlugins: [],
 
   keymaps: {
