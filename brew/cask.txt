@@ -1,3 +1,6 @@
 hyper
-java8
+macpass
 ngrok
+the-unarchiver
+transmission
+visual-studio-code

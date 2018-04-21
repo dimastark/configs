@@ -11,6 +11,7 @@ module.exports = {
     // "BEAM", "UNDERLINE", "BLOCK"
     cursorShape: 'UNDERLINE',
     cursorColor: 'rgba(70, 252, 62, .8)',
+    selectionColor: 'rgba(13, 38, 154, .8)',
     cursorBlink: true,
 
     foregroundColor: '#fff',
@@ -19,6 +20,7 @@ module.exports = {
 
     css: '',
     termCSS: '',
+    windowSize: [650, 440],
     padding: '12px 14px',
 
     colors: {
@@ -40,12 +42,6 @@ module.exports = {
       lightWhite: '#ffffff'
     },
 
-    // hyperBorder: {
-    //   borderColors: ['#2ca164', '#c6ff00'],
-    //   blurredColors: ['#e6e6e6'],
-    //   borderWidth: '1px',
-    // },
-
     shell: '/usr/local/bin/fish',
     shellArgs: ['--login'],
 
@@ -54,7 +50,7 @@ module.exports = {
   },
 
   // Plugins from npm
-  plugins: ['hyper-ligatures'],
+  plugins: [],
   localPlugins: [],
 
   keymaps: {
