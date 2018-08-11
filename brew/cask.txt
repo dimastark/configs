@@ -1,6 +1,0 @@
-hyper
-macpass
-ngrok
-the-unarchiver
-transmission
-visual-studio-code
