@@ -1,6 +1,6 @@
 import * as path from 'path';
 
-import { exec } from 'shelljs';
+import { exec, rm } from 'shelljs';
 
 import { SystemTool } from '../SystemTool';
 
@@ -10,6 +10,8 @@ export const brew: SystemTool = {
     order: 0,
 
     backup() {
+        rm(bundlePath);
+
         return exec(`brew bundle dump --file="${bundlePath}"`).code;
     },
 
@@ -19,11 +21,9 @@ export const brew: SystemTool = {
 
     cleanup() {
         return (
-            exec(`brew bundle cleanup --file="${bundlePath}"`).code ||
             exec('brew upgrade').code ||
             exec('brew cask upgrade').code ||
-            exec('brew cleanup -s').code ||
-            exec('brew cask cleanup').code
+            exec('brew cleanup -s').code
         );
     }
 };
