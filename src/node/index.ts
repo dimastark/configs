@@ -11,9 +11,7 @@ export const node: SystemTool = {
 
     restore() {
         return (
-            exec('npm i -g npm').code ||
-            exec('npm i -g typescript').code ||
-            exec('npm i -g ts-node').code
+            exec('npm i -g npm').code
         );
     },
 
