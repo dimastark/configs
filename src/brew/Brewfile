@@ -9,7 +9,6 @@ brew "python"
 brew "httpie"
 brew "hub"
 brew "node"
-cask "ngrok"
 cask "the-unarchiver"
 cask "transmission"
-
+cask "yandex"

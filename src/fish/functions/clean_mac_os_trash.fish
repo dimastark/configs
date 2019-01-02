@@ -1,36 +1,41 @@
 function clean_mac_os_trash
+	set P $PWD
+
 	cd /Applications
 
-	sudo rm -rf Automator.app \
-	            Calendar.app \
-	            Chess.app \
-	            Contacts.app \
-	            Dashboard.app \
-	            Dictionary.app \
-	            "DVD Player.app" \
-	            FaceTime.app \
-	            "Image Capture.app" \
-	            Maps.app \
-	            Messages.app \
-	            News.app \
-	            Notes.app \
-	            "Photo Booth.app" \
-	            Photos.app \
-	            Preview.app \
-	            "QuickTime Player.app" \
-	            Reminders.app \
-	            Safari.app \
-	            Siri.app \
-	            Stickies.app \
-	            Stocks.app \
-	            VoiceMemos.app
+	sudo rm -rf     Stocks.app \
+		        VoiceMemos.app \
+			Home.app \
+			Notes.app \
+			Stickies.app \
+			"Image Capture.app" \
+			Maps.app \
+			Contacts.app \
+			Reminders.app \
+			Dictionary.app \
+			Messages.app \
+			Photos.app \
+			Chess.app \
+			Automator.app \
+			Dashboard.app \
+			FaceTime.app \
+			iTunes.app \
+			"Mission Control.app" \
+			"Photo Booth.app" \
+			Safari.app \
+			Siri.app \
+			"Time Machine.app"
 
-	cd /Utilities
+	cd /Applications/Utilities
 
-	sudo rm -rf "Boot Camp Assistant.app" \
+	sudo rm -rf "Audio MIDI Setup.app" \
+		    "Boot Camp Assistant.app" \
+		    Console.app \
+		    "ColorSync Utility.app" \
 	            "Feedback Assistant.app" \
 	            "Grapher.app" \
 	            "Migration Assistant.app" \
 	            "Script Editor.app" \
 	            "VoiceOver Utility.app"
+	cd $P	
 end
