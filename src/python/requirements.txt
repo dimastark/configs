@@ -1,2 +1,2 @@
-ipython
-pipenv
+ipython==7.2.0
+pipenv==2018.11.26

@@ -12,7 +12,7 @@ export const fish: SystemTool = {
 
     backup() {
         cp('~/.config/fish/config.fish', fishConfigPath);
-        cp('-R', '~/.config/fish/functions', fishFunctionsPath);
+        cp('-R', '~/.config/fish/functions', __dirname);
 
         return 0;
     },
