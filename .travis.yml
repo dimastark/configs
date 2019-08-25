@@ -1,0 +1,9 @@
+language: go
+
+before_install:
+- go get github.com/tcnksm/ghr
+- go get -v ./...
+
+script:
+- GOOS=darwin  go build -o dist/configs
+- ghr --username dimastark --token $GITHUB_TOKEN --replace --prerelease --debug pre-release dist/
