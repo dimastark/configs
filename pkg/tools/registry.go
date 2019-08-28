@@ -5,6 +5,7 @@ import (
 	"github.com/dimastark/configs/pkg/tools/brew"
 	"github.com/dimastark/configs/pkg/tools/fish"
 	"github.com/dimastark/configs/pkg/tools/git"
+	"github.com/dimastark/configs/pkg/tools/monita"
 	"github.com/dimastark/configs/pkg/tools/node"
 	"github.com/dimastark/configs/pkg/tools/python"
 )
@@ -16,4 +17,5 @@ var Registry = []tool.Namer{
 	git.New(),
 	node.New(),
 	python.New(),
+	monita.New(),
 }
