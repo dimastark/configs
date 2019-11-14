@@ -58,7 +58,5 @@ func (f *Fish) Restore() error {
 
 // Cleanup implements Cleanuper interface
 func (f *Fish) Cleanup() error {
-	return f.Exec(
-		`fish -c "clean_mac_os_trash"`,
-	)
+	return nil
 }

@@ -1,9 +1,15 @@
 function clean_mac_os_trash
     set P $PWD
 
-    cd /Applications
+    cd /System/Applications
 
     sudo rm -rf Stocks.app \
+            FindMy.app \
+            News.app \
+            Messages.app \
+            TV.app \
+            Music.app \
+            Podcasts.app \
             VoiceMemos.app \
             Home.app \
             Notes.app \
