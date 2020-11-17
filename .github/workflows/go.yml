@@ -26,6 +26,9 @@ jobs:
         go get -v -t -d ./...
 
     - name: Build
+      env:
+        GOOS: darwin 
+        GOARCH: amd64
       run: go build -v .
 
     - name: Create Release
