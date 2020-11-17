@@ -52,7 +52,7 @@ func (b *Brew) Cleanup() error {
 	return b.Exec(
 		"brew update " +
 			"&& brew upgrade " +
-			"&& brew cask upgrade " +
+			"&& brew upgrade --cask " +
 			"&& brew cleanup -s",
 	)
 }
